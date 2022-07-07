@@ -1,5 +1,3 @@
 # TShop2
 
-Автор: Кирилл
-
-lesson1
+Автор: TheSnilot
