@@ -145,7 +145,7 @@
                             <span class="NumberButton">1</span>
                             <button class="plus">+</button>
                         </div>
-                        <p>100000-150000 тг</p>
+                        <p>120000 тг</p>
                     </div>
                     <button class="atb">добавить в корзину</button>
                 </div>
@@ -165,23 +165,28 @@
                     <button class="atb">добавить в корзину</button>
                 </div>
             </section>
-            <form>
-                <div>
+            <form class="Form">
+                <div class="Bask">
                     <label for="basket">Ваш заказ</label>
                     <input type="text" placeholder="Корзина пуста" name="basket" disabled>
-                    <p><span>Доставка:</span>беплатно</p>
+                    <p>Доставка: <span>беплатно</span></p>
                     <p>Итого: 0 тг</p>
                 </div>
-                <div>
+                <div class="Pic">
                     <img scr="" width="60" height="60">
-                    <p>Название товара</p>
-                    <p>0 тг</p>
+                    <div>
+                        <p>Название товара</p>
+                        <p class="O">0 тг</p>
+                    </div>
                 </div>
-                <div>
+                <div class="Tel">
                     <label for="tel">Оформить заказ</label>
                     <input type="tel" placeholder="Ваш номер телефона" name="tel">
                 </div>
-                <button>Заказать</button>
+                <button class="Ord">Заказать</button>
+                <svg height="1px" class="line">
+                    <line x0=0 y0=0 x1=100% y1="0" stroke="#6F7073"></line>
+                </svg>
             </form>
         </main>
         <footer></footer>

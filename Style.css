@@ -49,6 +49,8 @@ header h1 {
     margin: 36px 0;
     padding: 20px 30px 30px;
     border-radius: 5px;
+    border: #FFFFFF 1px solid;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
@@ -145,3 +147,88 @@ header h1 {
     border: none;
     border-radius: 5px;
 }
+
+.Form {
+    position: relative;
+    background-color: #A4A5A6;
+    margin: 36px 0;
+    padding: 20px 30px 30px;
+    border-radius: 5px;
+    border: #FFFFFF 1px solid;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Bask {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.Bask span {
+    font-weight: 400;
+}
+
+.Bask input, .Tel input {
+    background-color: #6F7073;
+    width: calc(100% - 40px);
+    margin: 20px 0 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding:0 20px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #1C1F26;
+   
+}
+
+.Pic {
+    border-top: 1px solid #6F7073; 
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 20px 0;
+}
+
+.O {
+    font-weight: 700;
+}
+
+.Pic p {
+    margin: 3px 15px;
+}
+
+.line {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 100%;
+}
+
+.Tel {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 20px 0 0;
+}
+
+.Ord {
+    background-color: #6F7073;
+    width: 140px;
+    margin: 20px 0 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding:0 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
