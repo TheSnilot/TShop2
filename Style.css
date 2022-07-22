@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: Fira Sans;
     src: url(/Fonts/FiraSans-Bold.ttf);
@@ -22,9 +29,16 @@ html  {
 }
 
 .HDR {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 35px;
     position: relative;
 }
@@ -49,7 +63,8 @@ header h1 {
     padding: 20px 30px 30px;
     border-radius: 5px;
     border: #FFFFFF 1px solid;
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 260px;
 }
 
@@ -82,10 +97,19 @@ header h1 {
 }
 
 .row {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card p {
@@ -98,8 +122,11 @@ header h1 {
 .buttons {
     background-color: #6F7073;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
     width: 119px;
     height: 32x;
+    box-sizing: border-box;
 }
 
 .buttons button {
@@ -120,8 +147,9 @@ header h1 {
     border-radius: 5px 0 0 5px;
 }
 
-.plus {
+.buttons .plus {
     border-radius: 0 5px 5px 0;
+    padding: 3px 13px;
 }
 
 .buttons button:hover, .atb:hover {
@@ -137,13 +165,22 @@ header h1 {
 
 .atb {
     background-color: #6F7073;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
     margin: 20px 0 10px;
     height: 40px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: none;
     border-radius: 5px;
 }
@@ -155,7 +192,8 @@ header h1 {
     padding: 20px 30px 30px;
     border-radius: 5px;
     border: #FFFFFF 1px solid;
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 260px;
 }
 
@@ -181,6 +219,26 @@ header h1 {
     outline: none;
 }
 
+input::-webkit-input-placeholder {
+    color: #1C1F26;
+   
+}
+
+input::-moz-placeholder {
+    color: #1C1F26;
+   
+}
+
+input:-ms-input-placeholder {
+    color: #1C1F26;
+   
+}
+
+input::-ms-input-placeholder {
+    color: #1C1F26;
+   
+}
+
 input::placeholder {
     color: #1C1F26;
    
@@ -188,8 +246,13 @@ input::placeholder {
 
 .Pic {
     border-top: 1px solid #6F7073; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -230,7 +293,8 @@ input::placeholder {
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Uno {
@@ -269,9 +333,16 @@ header a {
 }
 
 .Gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 30px 0;
 }
 
@@ -296,14 +367,25 @@ header a {
 
 @media(min-width: 768px) {
     .partners {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .Row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .Gallery img {
@@ -325,19 +407,29 @@ header a {
 
 @media(min-width: 1024px) {
     .catalog-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin: 0 auto;
         max-width: 1070px;
     }
 
     .row {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .Form {
         display: block;
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content;
         max-width: 260px;
         margin: 36px 18px 15px;
@@ -348,7 +440,7 @@ header a {
     }
 
     .card {
-        margin: 36px 17px 16px;
+        margin: 36px 15px 16px;
     }
 
     .Ph {
@@ -357,10 +449,17 @@ header a {
     }
 
     .Desk {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         max-width: 1100px;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .Desk section {

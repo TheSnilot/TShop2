@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <title>TShop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Style.css">
+        <link rel="stylesheet" href="/style.min.css">
     </head>
     <body>
         <header class="HDR">
-            <img class="logo" src="/img/TSlog.png" width="200" height="230">
+            <img class="logo" src="/img/TSlog.png" width="200" height="230" alt="Logo">
             <h1>TShop</h1>
             <h2 class="motto">Электроника и приборы</h2>
         </header>
         <main class="catalog-main">
             <section class="Row">
                 <div class="card">
-                    <img src="/img/Сoffee1.jpg" width="220" height="220">
+                    <img src="/img/Сoffee1.jpg" width="220" height="220" alt="Coffee machine">
                     <a href="Products/Coffee.html"><h3>Кофеварка Delonghi<br/>(ICM 15250)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Microwave1.jpg" width="220" height="220">
+                    <img src="/img/Microwave1.jpg" width="220" height="220" alt="Microwave">
                     <a href="/Products/Microwave.html"><h3>Микроволновка Samsung 
                         (MS23H3)</h3></a>
                     <span class="count">1 шт.</span>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Camera1.jpg" width="220" height="220">
+                    <img src="/img/Camera1.jpg" width="220" height="220" alt="Camera">
                     <a href="/Products/Camera.html"><h3>Камера Canon EOS<br/>(M50)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Laptop2.jpg" width="220" height="220">
+                    <img src="/img/Laptop2.jpg" width="220" height="220" alt="Laptop">
                     <a href="/Products/Laptop.html"><h3>Ноутбук SONY VAIO (svf152a29v)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -77,7 +77,7 @@
 
                 
                 <div class="card">
-                    <img src="/img/Clock1.jpg" width="220" height="220">
+                    <img src="/img/Clock1.jpg" width="220" height="220" alt="Clock">
                     <a href="/Products/Clock.html"><h3>Часы IKEA<br/>PUGG</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Projector1.jpg" width="220" height="220">
+                    <img src="/img/Projector1.jpg" width="220" height="220" alt="Projector">
                     <a href="/Products/Projector.html"><h3>Проектор EPSON (Модель EB-W31)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Mouse1.jpg" width="220" height="220">
+                    <img src="/img/Mouse1.jpg" width="220" height="220" alt="Mouse">
                     <a href="/Products/Mouse.html"><h3>Мышка LOGITECH<br/>(M185)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Printer2.jpg" width="220" height="220">
+                    <img src="/img/Printer2.jpg" width="220" height="220" alt="Printer">
                     <a href="/Products/Printer.html"><h3>Принтер HP LaserJet<br/>(1018)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Ipad3.jpg" width="220" height="220">
+                    <img src="/img/Ipad3.jpg" width="220" height="220" alt="IPad">
                     <a href="/Products/IPad.html"><h3>IPad<br/>(Два вида)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/Micro1.jpg" width="220" height="220">
+                    <img src="/img/Micro1.jpg" width="220" height="220" alt="Microphone">
                     <a href="/Products/Micro.html"><h3>Рекордер ZOOM<br/>(H2n)</h3></a>
                     <span class="count">1 шт.</span>
                     <div class="row">
@@ -170,12 +170,12 @@
                 <form class="Form">
                     <div class="Bask">
                         <label for="basket">Ваш заказ</label>
-                        <input type="text" placeholder="Корзина пуста" name="basket" disabled>
+                        <input type="text" placeholder="Корзина пуста" id="basket" disabled>
                         <p>Доставка: <span>беплатно</span></p>
                         <p>Итого: 0 тг</p>
                     </div>
                     <div class="Pic">
-                        <img scr="" width="60" height="60">
+                        <img src="/" width="60" height="60" alt="Chosen product">
                         <div>
                             <p>Название товара</p>
                             <p class="O">0 тг</p>
@@ -183,11 +183,11 @@
                     </div>
                     <div class="Tel">
                         <label for="tel">Оформить заказ</label>
-                        <input type="tel" placeholder="Ваш номер телефона" name="tel">
+                        <input type="tel" placeholder="Ваш номер телефона" id="tel">
                     </div>
                     <button class="Ord">Заказать</button>
                     <svg height="1px" class="line">
-                        <line x0=0 y0=0 x1=100% y1="0" stroke="#6F7073"></line>
+                        <line x1=0 y1=0 x2=100% y2="0" stroke="#6F7073"></line>
                     </svg>
                 </form>
                 <div class="card partners">
